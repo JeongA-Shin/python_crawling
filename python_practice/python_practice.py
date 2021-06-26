@@ -242,3 +242,57 @@ def sum(a,b):
 print(sum(1,2))
 
 
+#파이썬 - 클래스 만들기
+class Quad:
+    #attribute(멤버 변수) 선언
+    height=0
+    width=0
+    color=''
+    name=''
+
+    #method(멤버 함수) 선언
+    def get_area(self): # 함수에 별도의 파라미터가 필요 없어도! self는 반드시 넣어줘야 한다. self는 선언 시에만 신경쓰면 됨
+        return self.height*self.width
+    
+    def quard_name(self): #객체의 name 반환
+        return self.name #name은 멤버변수이므로 self.을 붙여줘야 함
+
+    #함수의 파라미터가 존재하는 경우에도 self는 반드시 써줘야 한다.
+    def quad_attribute(self,arg1,arg2):
+        return arg1+agr2; # arg1,arg2는 그냥 단순 변수(파라미터)일 뿐 별도로 멤버 변수나 그런게 아니므로 self.arg1 이렇게 표현할 필요 없음
+
+#객체의 생성
+quad1=Quad()
+
+#객체의 기능(속성,메서드)호출
+quad1.height=30 # 속성을 직접 지정 가능
+quad1.name="hello"
+quad1.quard_name()#self는 호출시에 고려하지 않음
+quad1.quad_attribute(1,2); #self는 호출시에 고려하지 않음
+
+
+#라이브러리
+#예: 수학함수들을 모아놓은 라이브러리가 있음- math 라이브러리
+#사용법1
+import math
+num=math.pow(3,3) #라이브러리에서의 특정 기능(메서드)를 호출
+print(num)
+num=math.factorial(5) #math 라이브러리의 팩토리얼 기능
+
+
+#사용법2
+from math import sqrt,factorial #라이브러리 모두를 import하지 않고, "내가 원하는 특정 메서드만" import함
+num1=sqrt(6) #바로 함수 호출만 하면 됨
+num2=factorial(3)
+
+#사용법 2-2(사용법1+사용법2) - 딱히 권장 안 함
+from math import * #math 라이브러리에서 모든 함수들을 import
+num=sqrt(3)+sqrt(3) # from~을 해줬으므로 math.으로 호출할 필요 없음
+
+#사용법 3 -라이브러리에 있는 함수명이 길거나해서 다른 이름으로 쓰고 싶을 때
+import math as d
+num=d.factorial(2);
+
+#사용법 3-1
+from math import factorial as f
+num=f(3) # factorial(3)이랑 같은 거임
