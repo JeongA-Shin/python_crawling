@@ -291,7 +291,7 @@ num=sqrt(3)+sqrt(3) # from~을 해줬으므로 math.으로 호출할 필요 없�
 
 #사용법 3 -라이브러리에 있는 함수명이 길거나해서 다른 이름으로 쓰고 싶을 때
 import math as d
-num=d.factorial(2);
+num=d.factorial(2)
 
 #사용법 3-1
 from math import factorial as f
