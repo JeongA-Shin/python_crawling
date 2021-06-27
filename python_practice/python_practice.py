@@ -101,7 +101,7 @@ a.index(1) #0
 a.pop() # 3 #pop()은 리스트의 맨 "마지막" 요소를 돌려주고, 그 요소는 '삭제'한다.
 a = [1,2,3]
 a.pop(1) #2 단, pop(x)는 리스트의 x번째 요소를 돌려주고 그 요소는 삭제한다.
-'''
+
 a = [1,2,3,1]
 a.count(1) #2 #count(x)는 리스트 안에 x가 몇 개 있는지 조사하여 그 개수를 돌려주는 함수이다.
 
@@ -296,3 +296,4 @@ num=d.factorial(2)
 #사용법 3-1
 from math import factorial as f
 num=f(3) # factorial(3)이랑 같은 거임
+'''
