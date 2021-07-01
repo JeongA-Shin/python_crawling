@@ -17,7 +17,9 @@ res=requests.get(naver_open_api,headers=header_params) #headers=header_params # 
 
 if(res.status_code == 200): #서버에서 정상적인 답을 줄 때
     #print(res.content)  #이렇게 하면 인코딩 때문에 사람이 해석하기 어렵고, 정리가 되지 않은 형태임
-    data=res.json()#이렇게하면 json포맷으로 보기 좋게 정돈됨
+
+    data=res.json()#이렇게하면 json포맷으로 보기 좋게 정돈됨 #json을 받아오기
+
     #print(data["items"][0]["title"])
     '''pprint.pprint(data)  # pprint로 해주면 json을 사람이 보기 좋게 출력해줌'''
     for index,item in enumerate(data["items"]):
