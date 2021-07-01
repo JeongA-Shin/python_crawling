@@ -7,6 +7,6 @@
 +) postman을 통해 rest API를 활용해서 빠르게 결과를(json) 확인할 수 있음
 '''
 
-#네이버 open api
+#네이버 open api (검색)
 #client ID: YqapK6EjxIBuZXwS8XoW
 #client server: 35Owa_sX5Q
